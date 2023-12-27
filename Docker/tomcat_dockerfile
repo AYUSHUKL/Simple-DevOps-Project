@@ -15,3 +15,11 @@ FROM tomcat:latest
 RUN cp -R /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps
 
 #now build docker file
+
+This Dockerfile essentially customizes the default Tomcat setup by pre-populating 
+the webapps directory with the default applications provided by Tomcat.
+
+When building and running a container from this Dockerfile, you would get a 
+Tomcat instance with the default web applications already deployed. 
+Note that this approach can be useful when you want to customize Tomcat's behavior 
+by modifying the default set of web applications.
